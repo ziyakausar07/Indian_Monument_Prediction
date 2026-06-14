@@ -1,0 +1,393 @@
+{
+  "ajanta_caves": {
+    "build_date": "2nd century BCE to 480 CE",
+    "materials_used": "Rock-cut basalt",
+    "environmental_impact": "High (vulnerable to moisture, water seepage, and biological growth)",
+    "protection_methods": "Humidity control, restricted lighting, drainage management, visitor regulation, and ASI conservation",
+    "description": "Ancient Buddhist cave monuments known for detailed murals, sculptures, prayer halls, and monastic spaces carved into a horseshoe-shaped cliff.",
+    "location": "Aurangabad district, Maharashtra",
+    "significance": "Ajanta is one of the finest surviving examples of ancient Indian Buddhist art and a UNESCO World Heritage Site.",
+    "architecture": "The caves include chaitya halls and viharas with narrative paintings from the Jataka tales, carved pillars, stupas, and Buddha figures.",
+    "key_facts": [
+      "There are about 30 rock-cut caves at Ajanta.",
+      "The paintings are important evidence of ancient Indian color, costume, music, and court life.",
+      "The site was rediscovered by a British officer in 1819."
+    ]
+  },
+  "alai_darwaza": {
+    "build_date": "1311 CE",
+    "materials_used": "Red sandstone and white marble inlay",
+    "environmental_impact": "Medium (stone weathering and pollution exposure)",
+    "protection_methods": "Stone cleaning, structural monitoring, visitor management, and ASI conservation",
+    "description": "A grand gateway in the Qutub complex built by Alauddin Khalji, admired for its precise arches and rich geometric decoration.",
+    "location": "Qutub complex, Delhi",
+    "significance": "It is considered one of the earliest major examples of true Islamic arch and dome construction in India.",
+    "architecture": "The gateway uses pointed arches, a central dome, carved lattice work, calligraphy, and contrasting marble ornament on red sandstone.",
+    "key_facts": [
+      "It was intended as part of Alauddin Khalji's expansion of the Quwwat-ul-Islam mosque.",
+      "The monument is part of the UNESCO-listed Qutub complex.",
+      "Its proportions and decoration show strong Indo-Islamic design development."
+    ]
+  },
+  "alai_minar": {
+    "build_date": "Early 14th century CE",
+    "materials_used": "Rubble masonry and stone",
+    "environmental_impact": "Medium (open exposure and masonry decay)",
+    "protection_methods": "Structural support, fencing, and ASI maintenance",
+    "description": "An unfinished tower begun by Alauddin Khalji, planned to be much taller than the Qutub Minar.",
+    "location": "Qutub complex, Delhi",
+    "significance": "The monument reflects the scale of Khalji imperial ambition, even though construction stopped after the ruler's death.",
+    "architecture": "Only the rough first storey survives, showing a massive circular masonry core without final decorative cladding.",
+    "key_facts": [
+      "It was planned as a companion to the Qutub Minar.",
+      "Construction stopped before the tower could be completed.",
+      "The remaining base helps visitors understand medieval construction stages."
+    ]
+  },
+  "charminar": {
+    "build_date": "1591 CE",
+    "materials_used": "Granite, lime mortar, pulverized marble, and stucco",
+    "environmental_impact": "High (traffic pollution, vibration, and urban pressure)",
+    "protection_methods": "Traffic regulation, cleaning, repairs, and heritage-zone monitoring",
+    "description": "The iconic four-minaret monument of Hyderabad, built by Muhammad Quli Qutb Shah at the heart of the old city.",
+    "location": "Hyderabad, Telangana",
+    "significance": "Charminar is Hyderabad's most recognized symbol and a major landmark of the Qutb Shahi period.",
+    "architecture": "It has four grand arches facing the cardinal directions, four minarets, stucco ornament, balconies, and a mosque on the upper floor.",
+    "key_facts": [
+      "The name Charminar means four minarets.",
+      "It stands near Laad Bazaar and Mecca Masjid.",
+      "The monument marks the planned center of historic Hyderabad."
+    ]
+  },
+  "charar_e_sharif": {
+    "build_date": "Traditionally associated with the 15th century; rebuilt after later damage",
+    "materials_used": "Wood, brick, and modern restoration materials",
+    "environmental_impact": "Medium (fire risk, moisture, and cold climate exposure)",
+    "protection_methods": "Fire protection systems, wood treatment, regular maintenance, and controlled repairs",
+    "description": "A revered Sufi shrine associated with Sheikh Noor-ud-din Noorani, also known as Nund Rishi.",
+    "location": "Charar-i-Sharief, Budgam district, Jammu and Kashmir",
+    "significance": "The shrine is deeply respected in Kashmir's spiritual culture and is connected with the Rishi-Sufi tradition.",
+    "architecture": "The structure reflects Kashmiri wooden shrine traditions with tiered roof forms and devotional interior spaces.",
+    "key_facts": [
+      "It is one of the most important Muslim pilgrimage sites in Kashmir.",
+      "The shrine has been rebuilt after serious damage in the 20th century.",
+      "It represents Kashmir's shared spiritual and cultural heritage."
+    ]
+  },
+  "ellora_caves": {
+    "build_date": "600-1000 CE",
+    "materials_used": "Rock-cut basalt",
+    "environmental_impact": "Medium (weathering, water seepage, and visitor pressure)",
+    "protection_methods": "Drainage control, chemical cleaning, structural support, visitor regulation, and ASI conservation",
+    "description": "A UNESCO World Heritage Site with Buddhist, Hindu, and Jain cave temples carved from the Charanandri hills.",
+    "location": "Aurangabad district, Maharashtra",
+    "significance": "Ellora is famous for showing the coexistence of three major Indian religious traditions in one monumental complex.",
+    "architecture": "The site includes monasteries, shrines, pillared halls, sculptures, and the Kailasa temple, carved from a single rock mass.",
+    "key_facts": [
+      "There are 34 major caves at Ellora.",
+      "The Kailasa temple is one of the largest monolithic rock-cut monuments in the world.",
+      "The caves were developed under several dynasties, including the Rashtrakutas."
+    ]
+  },
+  "gateway_of_india": {
+    "build_date": "Foundation laid in 1913; completed in 1924",
+    "materials_used": "Yellow basalt and reinforced concrete",
+    "environmental_impact": "High (marine air, salt exposure, pollution, and crowd pressure)",
+    "protection_methods": "Cleaning, anti-corrosive treatment, stone inspection, and crowd management",
+    "description": "A ceremonial arch monument on Mumbai's waterfront, built to commemorate the 1911 visit of King George V and Queen Mary.",
+    "location": "Apollo Bunder, Mumbai, Maharashtra",
+    "significance": "It is one of Mumbai's most famous landmarks and is closely linked with India's colonial and postcolonial history.",
+    "architecture": "The monument blends Indo-Saracenic design with Gujarati and Islamic architectural details, including a large central arch.",
+    "key_facts": [
+      "The last British troops ceremonially departed India from this area in 1948.",
+      "It overlooks Mumbai Harbour near the Taj Mahal Palace Hotel.",
+      "It is a major starting point for ferries to Elephanta Caves."
+    ]
+  },
+  "golden_temple": {
+    "build_date": "Foundation laid in 1588; shrine completed in the early 17th century",
+    "materials_used": "Marble, copper, gold gilding, and decorative inlay work",
+    "environmental_impact": "Medium (crowd pressure, water quality, and urban pollution)",
+    "protection_methods": "Regular cleaning, sarovar maintenance, controlled renovation, marble care, and community-led upkeep",
+    "description": "Sri Harmandir Sahib, popularly called the Golden Temple, is the holiest Sikh shrine and a major place of worship, service, and equality.",
+    "location": "Amritsar, Punjab",
+    "significance": "It is the spiritual center of Sikhism and houses the Guru Granth Sahib, the central scripture of the Sikh faith.",
+    "architecture": "The shrine stands in the middle of the Amrit Sarovar and is reached by a causeway. Its lower marble level, gilded upper structure, domes, and reflective water create its famous appearance.",
+    "key_facts": [
+      "The temple has four entrances, symbolizing openness to people from all directions and backgrounds.",
+      "The community kitchen, or langar, serves free meals to thousands of visitors every day.",
+      "The Akal Takht, one of Sikhism's highest seats of authority, is located in the same complex."
+    ]
+  },
+  "hawa_mahal": {
+    "build_date": "1799 CE",
+    "materials_used": "Red and pink sandstone",
+    "environmental_impact": "Medium (wind erosion, dust, and urban pollution)",
+    "protection_methods": "Facade restoration, stone cleaning, and controlled maintenance",
+    "description": "The Palace of Winds is a five-storey facade built for the royal women of Jaipur to observe street life and festivals.",
+    "location": "Jaipur, Rajasthan",
+    "significance": "It is one of Jaipur's most recognizable landmarks and an important example of Rajput urban palace design.",
+    "architecture": "The honeycomb-like facade has hundreds of small jharokha windows that allow ventilation and filtered views.",
+    "key_facts": [
+      "It was built by Maharaja Sawai Pratap Singh.",
+      "Its design is often associated with the crown of Lord Krishna.",
+      "The narrow structure is more like a screen wall than a conventional palace."
+    ]
+  },
+  "humayuns_tomb": {
+    "build_date": "1570 CE",
+    "materials_used": "Red sandstone, white marble, and rubble masonry",
+    "environmental_impact": "Medium (pollution, water stress, and visitor pressure)",
+    "protection_methods": "Garden restoration, stone conservation, ASI supervision, and heritage-zone management",
+    "description": "The garden tomb of Mughal Emperor Humayun, commissioned by his wife Haji Begum.",
+    "location": "Delhi",
+    "significance": "It is a UNESCO World Heritage Site and an important predecessor to later Mughal monuments such as the Taj Mahal.",
+    "architecture": "The tomb uses a charbagh garden plan, high platform, Persian-inspired double dome, red sandstone surfaces, and marble details.",
+    "key_facts": [
+      "It is often called the first major garden tomb of the Indian subcontinent.",
+      "The complex contains several other Mughal-era tombs.",
+      "Major conservation work revived its historic gardens and water channels."
+    ]
+  },
+  "india_gate": {
+    "build_date": "Foundation laid in 1921; completed in 1931",
+    "materials_used": "Red and pale sandstone, granite, and masonry",
+    "environmental_impact": "High (air pollution, dust, and heavy visitor activity)",
+    "protection_methods": "Regular cleaning, security protection, lighting maintenance, and public-space management",
+    "description": "A war memorial in New Delhi honoring Indian soldiers who died in World War I and related campaigns.",
+    "location": "Kartavya Path, New Delhi",
+    "significance": "India Gate is one of India's major national memorials and a central landmark of the capital.",
+    "architecture": "Designed by Edwin Lutyens, it is a triumphal arch with names of soldiers inscribed on its surface.",
+    "key_facts": [
+      "The Amar Jawan Jyoti was added after the 1971 Indo-Pak War.",
+      "The National War Memorial now stands nearby.",
+      "The monument is part of New Delhi's ceremonial axis."
+    ]
+  },
+  "iron_pillar": {
+    "build_date": "Around 4th-5th century CE",
+    "materials_used": "Wrought iron",
+    "environmental_impact": "Low to medium (touching, moisture, and surface wear)",
+    "protection_methods": "Protective fencing, visitor control, and surface monitoring",
+    "description": "An ancient iron pillar famous for its unusual resistance to corrosion over many centuries.",
+    "location": "Qutub complex, Delhi",
+    "significance": "It is a major example of early Indian metallurgical skill and carries an inscription linked to a Gupta-period ruler.",
+    "architecture": "The pillar is a tall forged iron shaft with a decorative capital, originally associated with a Vishnu standard.",
+    "key_facts": [
+      "It weighs several tons and has stood outdoors for centuries.",
+      "Its corrosion resistance is linked to its material composition and protective surface layer.",
+      "It is part of the Qutub complex visited with Qutub Minar."
+    ]
+  },
+  "jamali_kamali_tomb": {
+    "build_date": "1528-1536 CE",
+    "materials_used": "Red sandstone, marble, plaster, and tile work",
+    "environmental_impact": "Medium (weathering, vegetation, and visitor pressure)",
+    "protection_methods": "Conservation, vegetation control, structural repair, and ASI maintenance",
+    "description": "A mosque and tomb complex associated with the Sufi poet Shaikh Jamali and Kamali.",
+    "location": "Mehrauli Archaeological Park, Delhi",
+    "significance": "The site is valued for its early Mughal-period decoration, poetry connections, and layered Delhi history.",
+    "architecture": "The tomb interior is known for painted plaster, Quranic inscriptions, tile decoration, and a richly ornamented ceiling.",
+    "key_facts": [
+      "Jamali was the pen name of Shaikh Fazlullah.",
+      "The complex includes both a mosque and a tomb.",
+      "It is located near several other monuments in Mehrauli."
+    ]
+  },
+  "khajuraho": {
+    "build_date": "950-1050 CE",
+    "materials_used": "Sandstone",
+    "environmental_impact": "Medium (stone erosion, weathering, and tourism pressure)",
+    "protection_methods": "Chemical preservation, landscaping, visitor management, and ASI conservation",
+    "description": "A group of Chandela-period temples famous for sculptural detail, temple architecture, and expressive stone carving.",
+    "location": "Chhatarpur district, Madhya Pradesh",
+    "significance": "Khajuraho is a UNESCO World Heritage Site and one of India's most celebrated temple complexes.",
+    "architecture": "The temples follow Nagara-style design with high platforms, clustered towers, mandapas, and intricate exterior sculptures.",
+    "key_facts": [
+      "Only a fraction of the original temple group survives today.",
+      "The temples include Hindu and Jain shrines.",
+      "The sculptures depict gods, musicians, dancers, daily life, and symbolic themes."
+    ]
+  },
+  "lotus_temple": {
+    "build_date": "1986 CE",
+    "materials_used": "White marble, concrete, glass, and steel",
+    "environmental_impact": "Medium (urban pollution and high visitor numbers)",
+    "protection_methods": "Marble cleaning, landscape maintenance, visitor control, and routine structural care",
+    "description": "A Bahai House of Worship known for its lotus-shaped form and open welcome to people of all faiths.",
+    "location": "New Delhi",
+    "significance": "It is one of modern India's most visited religious buildings and represents unity, peace, and meditation.",
+    "architecture": "The building is formed by 27 marble-clad petals arranged in clusters around a central prayer hall.",
+    "key_facts": [
+      "No sermons or rituals specific to one religion are performed inside.",
+      "The design was created by architect Fariborz Sahba.",
+      "Its nine surrounding pools help enhance the lotus-like appearance."
+    ]
+  },
+  "mysore_palace": {
+    "build_date": "Present structure completed in 1912",
+    "materials_used": "Granite, marble, wood, stained glass, and iron",
+    "environmental_impact": "Medium (crowd pressure, humidity, and maintenance demands)",
+    "protection_methods": "Routine maintenance, controlled access, fire safety, and heritage management",
+    "description": "The royal palace of the Wadiyar dynasty, known for its grand halls, domes, arches, and illuminated evening views.",
+    "location": "Mysuru, Karnataka",
+    "significance": "It is a major symbol of Karnataka's royal history and a center of Mysuru Dasara celebrations.",
+    "architecture": "The palace combines Indo-Saracenic, Rajput, Hindu, and Gothic elements with ornate interiors and ceremonial spaces.",
+    "key_facts": [
+      "The earlier wooden palace was destroyed by fire.",
+      "The present palace was designed by Henry Irwin.",
+      "It is famous for being lit with thousands of bulbs on special evenings."
+    ]
+  },
+  "pattadakallu_hampi": {
+    "build_date": "7th-8th century CE for Pattadakal; 14th-16th century CE for Hampi",
+    "materials_used": "Sandstone at Pattadakal and granite at Hampi",
+    "environmental_impact": "High (tourism pressure, natural erosion, and exposed ruins)",
+    "protection_methods": "UNESCO protection, ASI management, controlled restoration, and site monitoring",
+    "description": "Major Karnataka heritage sites featuring Chalukyan temple architecture at Pattadakal and Vijayanagara ruins at Hampi.",
+    "location": "Bagalkot and Vijayanagara districts, Karnataka",
+    "significance": "Both sites are UNESCO World Heritage Sites and represent major achievements of South Indian architecture and urban planning.",
+    "architecture": "Pattadakal shows a blend of northern Nagara and southern Dravidian temple forms, while Hampi includes temples, markets, royal platforms, and water systems.",
+    "key_facts": [
+      "Pattadakal was a ceremonial center of the Chalukyas.",
+      "Hampi was the capital of the Vijayanagara Empire.",
+      "The Virupaksha Temple at Hampi remains an active place of worship."
+    ]
+  },
+  "qutub_minar": {
+    "build_date": "Construction began around 1199 CE; later additions continued into the 14th century",
+    "materials_used": "Red sandstone, marble, and quartzite",
+    "environmental_impact": "High (pollution, stone weathering, and visitor load)",
+    "protection_methods": "Structural monitoring, cleaning, restricted access inside the tower, and ASI conservation",
+    "description": "A soaring victory tower and minaret in Delhi, part of the UNESCO-listed Qutub complex.",
+    "location": "Mehrauli, Delhi",
+    "significance": "Qutub Minar is one of India's tallest historic stone towers and a landmark of early Delhi Sultanate architecture.",
+    "architecture": "The tower has fluted shafts, balconies, inscriptions, and alternating bands of red sandstone and marble.",
+    "key_facts": [
+      "It is about 73 meters tall.",
+      "Construction was begun by Qutb-ud-din Aibak and expanded by Iltutmish.",
+      "The complex also includes the Quwwat-ul-Islam mosque and Iron Pillar."
+    ]
+  },
+  "red_fort": {
+    "build_date": "1639-1648 CE",
+    "materials_used": "Red sandstone, marble, lime plaster, and decorative stone inlay",
+    "environmental_impact": "High (air pollution, crowd pressure, and stone blackening)",
+    "protection_methods": "UNESCO protection, ASI conservation, cleaning, structural repairs, and visitor management",
+    "description": "A major Mughal fort-palace complex in Delhi built by Emperor Shah Jahan when he shifted the capital to Shahjahanabad.",
+    "location": "Old Delhi, Delhi",
+    "significance": "The Red Fort is a UNESCO World Heritage Site and the place from which India's Prime Minister addresses the nation on Independence Day.",
+    "architecture": "The fort includes massive red sandstone walls, palace halls, audience chambers, gardens, and marble pavilions.",
+    "key_facts": [
+      "Important structures include Diwan-i-Aam, Diwan-i-Khas, Rang Mahal, and Lahori Gate.",
+      "The fort remained a major Mughal political center for nearly two centuries.",
+      "Its design influenced later buildings in northern India."
+    ]
+  },
+  "sun_temple_konark": {
+    "build_date": "13th century CE, commonly dated around 1250 CE",
+    "materials_used": "Khondalite stone, laterite, and chlorite",
+    "environmental_impact": "High (salt-laden air, stone decay, and coastal weathering)",
+    "protection_methods": "Structural care, drainage, stone conservation, site monitoring, and ASI management",
+    "description": "A monumental temple dedicated to Surya, designed as a stone chariot with giant wheels and horses.",
+    "location": "Konark, Odisha",
+    "significance": "Konark Sun Temple is a UNESCO World Heritage Site and one of the greatest achievements of Kalinga architecture.",
+    "architecture": "The temple is famous for its carved wheels, sculptural panels, chariot concept, and precise stone ornamentation.",
+    "key_facts": [
+      "It was built under King Narasimhadeva I of the Eastern Ganga dynasty.",
+      "The 24 carved wheels are often linked with time and the solar cycle.",
+      "The surviving structure is only part of the original temple complex."
+    ]
+  },
+  "taj_mahal": {
+    "build_date": "Construction began in 1632 CE; main mausoleum completed around 1648 CE",
+    "materials_used": "White marble, red sandstone, precious and semi-precious stone inlay",
+    "environmental_impact": "Very high (air pollution, marble yellowing, riverfront stress, and tourism pressure)",
+    "protection_methods": "Pollution control zones, mud-pack cleaning, visitor regulation, marble conservation, and ASI maintenance",
+    "description": "A white marble mausoleum built by Mughal Emperor Shah Jahan in memory of Mumtaz Mahal.",
+    "location": "Agra, Uttar Pradesh",
+    "significance": "The Taj Mahal is a UNESCO World Heritage Site and one of the world's most famous monuments of love and Mughal art.",
+    "architecture": "It uses perfect symmetry, a charbagh garden, a central dome, minarets, calligraphy, pietra dura inlay, and riverfront planning.",
+    "key_facts": [
+      "Thousands of artisans and craftsmen worked on the complex.",
+      "The marble changes appearance with different light conditions.",
+      "The complex includes a mosque, guest house, gardens, gateways, and the mausoleum."
+    ]
+  },
+  "tanjavur_temple": {
+    "build_date": "1010 CE",
+    "materials_used": "Granite",
+    "environmental_impact": "Low to medium (weathering, visitor pressure, and ritual use)",
+    "protection_methods": "Conservation, stone maintenance, visitor control, and ASI oversight",
+    "description": "Brihadeeswarar Temple, a grand Chola temple dedicated to Lord Shiva and known for its massive vimana.",
+    "location": "Thanjavur, Tamil Nadu",
+    "significance": "It is a UNESCO World Heritage Site and one of the finest examples of Chola architecture and imperial power.",
+    "architecture": "The temple has a towering granite vimana, large courtyard, sculptural panels, inscriptions, and a huge Nandi statue.",
+    "key_facts": [
+      "It was built by Raja Raja Chola I.",
+      "The temple is part of the Great Living Chola Temples group.",
+      "Its inscriptions provide valuable information about Chola administration and temple culture."
+    ]
+  },
+  "victoria_memorial": {
+    "build_date": "Foundation laid in 1906; opened in 1921",
+    "materials_used": "White Makrana marble, metal, and masonry",
+    "environmental_impact": "High (air pollution, humidity, and urban exposure)",
+    "protection_methods": "Marble cleaning, museum conservation, landscape care, and structural monitoring",
+    "description": "A large marble memorial and museum dedicated to Queen Victoria, now a major cultural landmark of Kolkata.",
+    "location": "Kolkata, West Bengal",
+    "significance": "It preserves colonial-era art, archives, and historical collections while serving as one of Kolkata's best-known monuments.",
+    "architecture": "The building combines British imperial, Indo-Saracenic, Mughal, and classical elements with a central dome and garden setting.",
+    "key_facts": [
+      "It was designed by William Emerson.",
+      "The Angel of Victory statue stands above the central dome.",
+      "The museum contains paintings, manuscripts, sculptures, and historical objects."
+    ]
+  },
+  "basilica_of_bom_jesus": {
+    "build_date": "Consecrated in 1605 CE",
+    "materials_used": "Laterite stone, lime plaster, wood, and marble",
+    "environmental_impact": "High (humidity, monsoon moisture, salt air, and visitor pressure)",
+    "protection_methods": "Moisture control, structural maintenance, conservation of relic areas, and visitor regulation",
+    "description": "A historic church in Old Goa famous for housing the relics of Saint Francis Xavier.",
+    "location": "Old Goa, Goa",
+    "significance": "It is part of the UNESCO-listed Churches and Convents of Goa and is one of India's most important Christian pilgrimage sites.",
+    "architecture": "The basilica has a Baroque facade, richly decorated altars, carved interiors, and a marble-and-jasper tomb of Saint Francis Xavier.",
+    "key_facts": [
+      "The church is linked to the spread of Christianity in early modern Goa.",
+      "Saint Francis Xavier's relics are displayed ceremonially at long intervals.",
+      "The exterior remains largely unplastered, showing laterite stone."
+    ]
+  },
+  "gol_gumbaz": {
+    "build_date": "1626-1656 CE",
+    "materials_used": "Dark grey basalt, lime plaster, and masonry",
+    "environmental_impact": "Medium (weathering, moisture, and visitor pressure)",
+    "protection_methods": "ASI maintenance, structural monitoring, drainage care, and controlled visitor access",
+    "description": "A massive 17th-century mausoleum of Mohammed Adil Shah, famous for its huge dome and whispering gallery.",
+    "location": "Vijayapura, Karnataka",
+    "significance": "Gol Gumbaz is one of the most impressive Deccan Sultanate monuments and is known for its engineering scale.",
+    "architecture": "The square tomb is topped by a vast unsupported dome, with corner towers and an acoustic gallery around the dome base.",
+    "key_facts": [
+      "The whispering gallery carries sound clearly across the dome interior.",
+      "It is among the largest masonry domes in the world.",
+      "The monument belongs to the Adil Shahi dynasty of Bijapur."
+    ]
+  },
+  "gwalior_fort": {
+    "build_date": "Early origins are ancient; major surviving structures date from the medieval period",
+    "materials_used": "Sandstone, limestone, and masonry",
+    "environmental_impact": "Medium (sandstone weathering, vegetation, and visitor pressure)",
+    "protection_methods": "Restoration, stone conservation, structural repairs, and ASI management",
+    "description": "A historic hill fort in Madhya Pradesh known for palaces, temples, gates, and long military history.",
+    "location": "Gwalior, Madhya Pradesh",
+    "significance": "Often called the Gibraltar of India, the fort controlled a strategic hilltop and witnessed many dynasties.",
+    "architecture": "The complex includes massive ramparts, Man Mandir Palace, Sas-Bahu temples, Teli ka Mandir, and decorated blue-tile facades.",
+    "key_facts": [
+      "The fort rises on a long sandstone hill above Gwalior city.",
+      "It was associated with rulers including the Tomars, Mughals, Marathas, and Scindias.",
+      "The Man Mandir Palace is famous for colorful tile decoration."
+    ]
+  }
+}
+ 

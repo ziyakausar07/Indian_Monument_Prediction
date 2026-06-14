@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - {{ monument }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="result-page">
+    <div class="app-background"></div>
+
+    <div class="container result-container">
+        <header class="header result-header">
+            <a href="/" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Scanner
+            </a>
+            <h1>Heritage <span>Lens</span></h1>
+        </header>
+
+        <main class="result-content">
+            <div class="result-hero-row">
+                <div class="image-panel glass-card">
+                    <div class="image-wrapper">
+                        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="{{ monument }}">
+                    </div>
+                    <div class="prediction-badge">
+                        <div class="match-score">
+                            {{ "%.1f"|format(confidence) }}% Match
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title-card glass-card">
+                    <h2>{{ monument }}</h2>
+                    <p class="description">{{ details.description if details.description else 'Description is not
+                        available for this monument yet.' }}</p>
+                    {% if details.significance %}
+                    <p class="description significance-note">{{ details.significance }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="details-grid">
+                    <div class="detail-card glass-card cascade-1">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Build Date</h3>
+                        <p>{{ details.build_date if details.build_date else 'Unknown' }}</p>
+                        <h3 class="detail-subtitle">Location</h3>
+                        <p>{{ details.location if details.location else 'Unknown' }}</p>
+                    </div>
+
+                    <div class="detail-card glass-card cascade-2">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Materials Used</h3>
+                        <p>{{ details.materials_used if details.materials_used else 'Unknown' }}</p>
+                    </div>
+
+                    <div class="detail-card glass-card cascade-3">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M17.5 19c2.5 0 4.5-2 4.5-4.5a4.5 4.5 0 0 0-8.2-2.5A5.5 5.5 0 0 0 3 13.5c0 3 2.5 5.5 5.5 5.5h9z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Environment Impact</h3>
+                        <p>{{ details.environmental_impact if details.environmental_impact else 'N/A' }}</p>
+                    </div>
+
+                    <div class="detail-card glass-card cascade-4">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Protection / Preservation</h3>
+                        <p>{{ details.protection_methods if details.protection_methods else 'N/A' }}</p>
+                    </div>
+
+                    <div class="detail-card glass-card cascade-5">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 21h18"></path>
+                                <path d="M5 21V9l7-5 7 5v12"></path>
+                                <path d="M9 21v-6h6v6"></path>
+                                <path d="M9 10h.01"></path>
+                                <path d="M15 10h.01"></path>
+                            </svg>
+                        </div>
+                        <h3>Architecture</h3>
+                        <p>{{ details.architecture if details.architecture else 'N/A' }}</p>
+                    </div>
+                </div>
+
+                {% if details.key_facts %}
+                <div class="insights-grid">
+                    <section class="insight-card glass-card wide-card">
+                        <h3>Important Facts</h3>
+                        <ul>
+                            {% for fact in details.key_facts %}
+                            <li>{{ fact }}</li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                </div>
+                {% endif %}
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

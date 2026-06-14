@@ -1,0 +1,29 @@
+                    precision    recall  f1-score   support
+
+      ajanta_caves       0.84      0.90      0.87        30
+      alai_darwaza       0.97      0.93      0.95        30
+        alai_minar       1.00      1.00      1.00        30
+         charminar       0.96      1.00      0.98        27
+      ellora_caves       0.89      0.83      0.86        30
+  gateway_of_india       1.00      1.00      1.00        30
+     golden_temple       0.50      0.47      0.48        30
+        hawa_mahal       0.43      0.41      0.42        29
+     humayuns_tomb       1.00      1.00      1.00        30
+        india_gate       0.97      1.00      0.98        30
+       iron_pillar       0.93      0.83      0.88        30
+jamali_kamali_tomb       0.97      0.97      0.97        30
+         khajuraho       1.00      1.00      1.00        18
+      lotus_temple       1.00      1.00      1.00        11
+     mysore_palace       0.97      1.00      0.98        30
+      non_monument       0.91      0.97      0.94        30
+pattadakallu_hampi       1.00      1.00      1.00        24
+       qutub_minar       0.83      1.00      0.91        30
+          red_fort       1.00      0.93      0.97        30
+ sun_temple_konark       1.00      1.00      1.00        30
+         taj_mahal       1.00      1.00      1.00        30
+   tanjavur_temple       1.00      0.93      0.97        30
+ victoria_memorial       1.00      1.00      1.00        30
+
+          accuracy                           0.92       649
+         macro avg       0.92      0.92      0.92       649
+      weighted avg       0.92      0.92      0.92       649

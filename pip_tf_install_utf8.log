@@ -1,0 +1,93 @@
+﻿Collecting tensorflow
+  Using cached tensorflow-2.21.0-cp311-cp311-win_amd64.whl.metadata (4.5 kB)
+Requirement already satisfied: absl-py>=1.0.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (2.4.0)
+Requirement already satisfied: astunparse>=1.6.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (1.6.3)
+Requirement already satisfied: flatbuffers>=25.9.23 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (25.12.19)
+Requirement already satisfied: gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (0.7.0)
+Requirement already satisfied: google_pasta>=0.1.1 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (0.2.0)
+Requirement already satisfied: libclang>=13.0.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (18.1.1)
+Requirement already satisfied: opt_einsum>=2.3.2 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (3.4.0)
+Requirement already satisfied: packaging in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (24.2)
+Requirement already satisfied: protobuf<8.0.0,>=6.31.1 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (7.34.0)
+Requirement already satisfied: requests<3,>=2.21.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (2.32.5)
+Requirement already satisfied: setuptools in c:\program files\windowsapps\pythonsoftwarefoundation.python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\lib\site-packages (from tensorflow) (65.5.0)
+Requirement already satisfied: six>=1.12.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (1.17.0)
+Requirement already satisfied: termcolor>=1.1.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (3.3.0)
+Requirement already satisfied: typing_extensions>=3.6.6 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (4.15.0)
+Requirement already satisfied: wrapt>=1.11.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (2.1.2)
+Requirement already satisfied: grpcio<2.0,>=1.24.3 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (1.78.0)
+Requirement already satisfied: keras>=3.12.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (3.13.2)
+Requirement already satisfied: numpy>=1.26.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (2.4.3)
+Requirement already satisfied: h5py<3.15.0,>=3.11.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (3.14.0)
+Requirement already satisfied: ml_dtypes<1.0.0,>=0.5.1 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from tensorflow) (0.5.4)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from astunparse>=1.6.0->tensorflow) (0.46.3)
+Requirement already satisfied: rich in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from keras>=3.12.0->tensorflow) (14.3.3)
+Requirement already satisfied: namex in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from keras>=3.12.0->tensorflow) (0.1.0)
+Requirement already satisfied: optree in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from keras>=3.12.0->tensorflow) (0.19.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from requests<3,>=2.21.0->tensorflow) (3.4.6)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from requests<3,>=2.21.0->tensorflow) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from requests<3,>=2.21.0->tensorflow) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from requests<3,>=2.21.0->tensorflow) (2026.2.25)
+Requirement already satisfied: markdown-it-py>=2.2.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from rich->keras>=3.12.0->tensorflow) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from rich->keras>=3.12.0->tensorflow) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in c:\users\asus\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from markdown-it-py>=2.2.0->rich->keras>=3.12.0->tensorflow) (0.1.2)
+Using cached tensorflow-2.21.0-cp311-cp311-win_amd64.whl (350.8 MB)
+Installing collected packages: tensorflow
+pip : ERROR: Could not 
+install packages due 
+to an OSError: [Errno 
+2] No such file or 
+directory: 'C:\\Users\\
+Asus\\AppData\\Local\\P
+ackages\\PythonSoftware
+Foundation.Python.3.11_
+qbz5n2kfra8p0\\LocalCac
+he\\local-packages\\Pyt
+hon311\\site-packages\\
+tensorflow\\include\\ex
+ternal\\com_github_grpc
+_grpc\\src\\core\\crede
+ntials\\call\\gcp_servi
+ce_account_identity\\gc
+p_service_account_ident
+ity_credentials.h'
+At line:1 char:1
++ pip install 
+tensorflow --user > 
+pip_tf_install.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (ERROR: Could    
+ no..._credentials.    
+h':String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+HINT: This error might 
+have occurred since 
+this system does not 
+have Windows Long Path 
+support enabled. You 
+can find information 
+on how to enable this 
+at https://pip.pypa.io/
+warnings/enable-long-pa
+ths
+
+
+[notice] A new release 
+of pip is available: 
+24.0 -> 26.0.1
+[notice] To update, 
+run: C:\Users\Asus\AppD
+ata\Local\Microsoft\Win
+dowsApps\PythonSoftware
+Foundation.Python.3.11_
+qbz5n2kfra8p0\python.ex
+e -m pip install 
+--upgrade pip

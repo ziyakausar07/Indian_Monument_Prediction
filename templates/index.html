@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Monuments Classification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-background"></div>
+    
+    <div class="container main-container">
+        <header class="header">
+            <h1>Heritage <span>Lens</span></h1>
+            <p>AI-Powered Indian Monument Recognition & Insight</p>
+        </header>
+
+        {% if missing_model %}
+        <div class="alert alert-warning">
+            <p><strong>Warning:</strong> The prediction model is currently not available. Please wait for the model to finish training.</p>
+        </div>
+        {% endif %}
+
+        <main class="upload-section">
+            <form action="/predict" method="POST" enctype="multipart/form-data" class="upload-form" id="uploadForm">
+                <div class="drop-zone" id="dropZone">
+                    <div class="drop-zone-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="upload-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                        <h3>Drag & Drop an image here</h3>
+                        <p>or</p>
+                        <label for="fileUpload" class="btn-primary">Browse Files</label>
+                        <input type="file" id="fileUpload" name="file" accept="image/*" hidden required>
+                    </div>
+                    <div id="imagePreview" class="image-preview" style="display: none;">
+                        <img src="" alt="Image Preview" id="previewImg">
+                        <button type="button" class="btn-remove" id="removeBtn">Remove</button>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button type="submit" class="btn-submit" id="submitBtn" disabled>
+                        <span>Analyze Monument</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </div>
+            </form>
+        </main>
+        
+        <footer class="footer">
+            <p>Preserving history through technology.</p>
+        </footer>
+    </div>
+
+    <script>
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileUpload');
+        const previewImg = document.getElementById('previewImg');
+        const imagePreview = document.getElementById('imagePreview');
+        const dropZoneContent = document.querySelector('.drop-zone-content');
+        const removeBtn = document.getElementById('removeBtn');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // Handle file selection
+        fileInput.addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                showPreview(this.files[0]);
+            }
+        });
+
+        // Handle Drag & Drop
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => {
+                dropZone.classList.add('dragover');
+            }, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => {
+                dropZone.classList.remove('dragover');
+            }, false);
+        });
+
+        dropZone.addEventListener('drop', function(e) {
+            let dt = e.dataTransfer;
+            let files = dt.files;
+            
+            if(files.length > 0) {
+                fileInput.files = files; // Assign files to input
+                showPreview(files[0]);
+            }
+        }, false);
+
+        function showPreview(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                previewImg.src = e.target.result;
+                dropZoneContent.style.display = 'none';
+                imagePreview.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.classList.add('active');
+            }
+            reader.readAsDataURL(file);
+        }
+
+        removeBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // prevent opening file dialog
+            fileInput.value = "";
+            previewImg.src = "";
+            imagePreview.style.display = 'none';
+            dropZoneContent.style.display = 'flex';
+            submitBtn.disabled = true;
+            submitBtn.classList.remove('active');
+        });
+
+        document.getElementById('uploadForm').addEventListener('submit', function() {
+            submitBtn.innerHTML = '<span>Analyzing...</span><div class="loader-tiny"></div>';
+            submitBtn.style.opacity = '0.8';
+        });
+
+    </script>
+</body>
+</html>
