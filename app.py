@@ -1,12 +1,9 @@
 import os
 import json
 import numpy as np
+from PIL import Image
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
-
-from tensorflow.keras.models import load_model
-from tensorflow.keras.utils import load_img, img_to_array
-from tensorflow.keras.applications.efficientnet import preprocess_input  # [IMPORTANT]
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
@@ -14,19 +11,44 @@ app.config['UPLOAD_FOLDER'] = 'static/uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # ========================
-# LOAD MODEL
+# CONFIG
 # ========================
-MODEL_PATH = "monument_model.h5"
+IMG_SIZE = 300
+TFLITE_PATH = "model.tflite"
 BEST_MODEL_PATH = "best_model.h5"
+MODEL_PATH = "monument_model.h5"
 
-active_model_path = BEST_MODEL_PATH if os.path.exists(BEST_MODEL_PATH) else MODEL_PATH
+# ========================
+# LOAD MODEL (TFLite or Keras)
+# ========================
+interpreter = None
+input_details = None
+output_details = None
+keras_model = None
 
-model = None
-if os.path.exists(active_model_path):
-    model = load_model(active_model_path, compile=False)
-    print(f"[SUCCESS] Model Loaded from {active_model_path}")
+if os.path.exists(TFLITE_PATH):
+    try:
+        from tensorflow.lite.python.interpreter import Interpreter
+        interpreter = Interpreter(model_path=TFLITE_PATH)
+    except Exception:
+        import tensorflow as tf
+        interpreter = tf.lite.Interpreter(model_path=TFLITE_PATH)
+    interpreter.allocate_tensors()
+    input_details = interpreter.get_input_details()
+    output_details = interpreter.get_output_details()
+    print(f"[SUCCESS] TFLite Model Loaded from {TFLITE_PATH}")
+elif os.path.exists(BEST_MODEL_PATH):
+    from tensorflow.keras.models import load_model
+    keras_model = load_model(BEST_MODEL_PATH, compile=False)
+    print(f"[SUCCESS] Keras Model Loaded from {BEST_MODEL_PATH}")
+elif os.path.exists(MODEL_PATH):
+    from tensorflow.keras.models import load_model
+    keras_model = load_model(MODEL_PATH, compile=False)
+    print(f"[SUCCESS] Keras Model Loaded from {MODEL_PATH}")
 else:
     print("[ERROR] No model found")
+
+model_loaded = (interpreter is not None or keras_model is not None)
 
 # ========================
 # LOAD CLASS INDICES
@@ -43,42 +65,35 @@ idx_to_class = {int(v): k for k, v in class_indices.items()}
 try:
     with open("monument_details.json") as f:
         monument_details = json.load(f)
-except:
+except Exception:
     monument_details = {}
-
-# ========================
-# CONFIG
-# ========================
-IMG_SIZE = 300
 
 # ========================
 # PREDICTION FUNCTION
 # ========================
 def predict(img_path):
-    if model is None:
+    if not model_loaded:
         raise ValueError("Model not loaded")
 
-    # 🔹 Load image
-    img = load_img(img_path, target_size=(IMG_SIZE, IMG_SIZE))
-    img = img.convert("RGB")
+    # 🔹 Load & resize image using PIL
+    img = Image.open(img_path).convert("RGB").resize((IMG_SIZE, IMG_SIZE))
+    img_arr = np.array(img, dtype=np.float32)
+    img_arr = np.expand_dims(img_arr, axis=0)
 
-    # 🔹 Convert to array
-    img = img_to_array(img)
-
-    # [IMPORTANT] FIX (EfficientNet preprocessing)
-    img = preprocess_input(img)
-
-    img = np.expand_dims(img, axis=0)
-
-    # 🔹 Prediction
-    pred = model.predict(img)[0]
+    # 🔹 Prediction (TFLite or Keras)
+    if interpreter is not None:
+        interpreter.set_tensor(input_details[0]['index'], img_arr)
+        interpreter.invoke()
+        pred = interpreter.get_tensor(output_details[0]['index'])[0]
+    else:
+        pred = keras_model.predict(img_arr)[0]
 
     # ========================
     # DEBUG (IMPORTANT)
     # ========================
     print("\n--- FULL PREDICTIONS ---")
     for i, prob in enumerate(pred):
-        print(idx_to_class[i], ":", round(prob * 100, 2), "%")
+        print(idx_to_class.get(i, f"Class {i}"), ":", round(prob * 100, 2), "%")
     print("-----------------------\n")
 
     # ========================
@@ -103,10 +118,10 @@ def predict(img_path):
 
     # 🟡 SIMILAR CONFUSION (only close values)
     elif (top1_conf - top2_conf) < 0.15:
-        label = f"Confused ({idx_to_class[top1_idx]} / {idx_to_class[top2_idx]})"
+        label = f"Confused ({idx_to_class.get(top1_idx, 'Unknown')} / {idx_to_class.get(top2_idx, 'Unknown')})"
 
     else:
-        label = idx_to_class[top1_idx]
+        label = idx_to_class.get(top1_idx, "Unknown")
 
     print("Final Label:", label)
     print("Confidence:", confidence)
@@ -119,7 +134,7 @@ def predict(img_path):
 # ========================
 @app.route('/')
 def index():
-    return render_template('index.html', missing_model=(model is None))
+    return render_template('index.html', missing_model=not model_loaded)
 
 
 # ========================
@@ -130,7 +145,7 @@ def upload():
     file = request.files.get('file')
 
     if file is None or file.filename == "":
-        return "No file uploaded"
+        return "No file uploaded", 400
 
     filename = secure_filename(file.filename)
     path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
@@ -153,4 +168,5 @@ def upload():
 # RUN
 # ========================
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
